@@ -58,6 +58,7 @@ a:active {
 }
 
 /*index.html.erb*/
+
 td {
   padding: 5px;
   font: black;
@@ -72,9 +73,15 @@ label {
   font-size: 15px;
 }
 
+/*index、edit*/
 .field, .action {
   padding-bottom: 20px;
 }
 
+/*show*/
+.success {
+  margin: 33px;
+  color: limegreen;
+}
 
 
