@@ -19,18 +19,58 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.top-page {
+/*全体*/
+main {
   width: 100%;
   padding: 33px;
 }
 
-p, a {
+h1 {
+  margin: 30px 0;
+}
+p{
   font-size: 15px;
   color: black;
   margin: 33px;
 }
 
+a {
+  text-decoration:none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: black;
+  color: white;
+}
+
+/*index.html.erb*/
+td {
+  padding: 5px;
+  font: black;
+}
+
+h2 {
+  margin: 15px 0;
+}
+
+label {
+  display: block;
+  font-size: 15px;
+}
 
 
 

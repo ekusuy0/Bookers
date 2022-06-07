@@ -14,9 +14,9 @@
     <tr>
       <td><%= book.title %></td>
       <td><%= book.body %></td>
-      <td><%= link_to 'Show', book_path %></td>
-      <td><%= link_to 'Edit', edit_book_path %></td>
-      <td><%= link_to 'Destroy', book_path(@book.id), model: :delete %></td>
+      <td><%= link_to 'Show', book_path(book) %></td>
+      <td><%= link_to 'Edit', edit_book_path(book) %></td>
+      <td><%= link_to 'Destroy', book_path(book), model: :delete %></td>
     </tr>
 
     <% end %>
@@ -35,8 +35,8 @@
     <label for="book_body">Body</label>
     <%= f.text_area :body %>
   </div>
-  
-  <div class="field">
+
+  <div class="action">
     <%= f.submit 'Create Book' %>
   </div>
 <% end %>
